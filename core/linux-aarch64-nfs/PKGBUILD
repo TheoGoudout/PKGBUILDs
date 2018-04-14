@@ -3,7 +3,7 @@
 
 buildarch=8
 
-pkgbase=linux-aarch64
+pkgbase=linux-aarch64-nfs
 _srcname=linux-4.17
 _kernelname=${pkgbase#linux}
 _desc="AArch64 multi-platform"
@@ -27,11 +27,11 @@ source=("http://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.xz"
 md5sums=('5bb13a03274b66b56c85b26682e407d7'
          'c656b4169dd6c87f93dfb49edea3ddbf'
          '79459eaa00aa5de588c73f3076f0907b'
-         '02251a347bc3f8daa61cd8bbb8883584'
+         '94a9e26d72b1e7088c6655799c93f918'
          '11a4f35c50f0bde59c30182aa7b797b7'
          '61c5ff73c136ed07a7aadbf58db3d96a'
          '584777ae88bce2c5659960151b64c7d8'
-         'b5ef67d6086e20de7b82265f562f88b1'
+         'f24e31417b2952b39f778b2d8fd4ad2a'
          '1d4477026533efaa0358a40855d50a83')
 
 prepare() {
@@ -254,7 +254,7 @@ _package-headers() {
 
 _package-chromebook() {
   pkgdesc="The Linux Kernel - ${_desc} - Chromebooks"
-  depends=('linux-aarch64')
+  depends=('linux-aarch64-nfs')
   conflicts=('linux-aarch64-rc-chromebook')
   install=${pkgname}.install
 
