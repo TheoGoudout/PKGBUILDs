@@ -1,1 +1,0 @@
-MOUSE_DAEMON_ARGS="-d /dev/input/event0"

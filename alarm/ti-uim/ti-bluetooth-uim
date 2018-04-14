@@ -1,8 +1,0 @@
-#!/bin/bash
-
-modprobe st_drv
-modprobe -r btwilink
-ti-uim &
-modprobe btwilink
-hciconfig hci0 up
-wait

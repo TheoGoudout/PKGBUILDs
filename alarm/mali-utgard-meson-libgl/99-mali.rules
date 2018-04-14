@@ -1,1 +1,0 @@
-KERNEL=="mali",SUBSYSTEM=="misc",MODE="0777"
